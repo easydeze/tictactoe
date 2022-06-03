@@ -1,5 +1,7 @@
-const player = (marking) => {
-    return {marking};
+class player {
+    constructor(marking) {
+        this.marking = marking;
+    }
 }
 
 const gameBoard = (() => {
@@ -128,8 +130,8 @@ const gameBoard = (() => {
 })();
 
 const playGame = (() => {
-    const playerOne = player("X");
-    const playerTwo = player("O");
+    const playerOne = new player("X");
+    const playerTwo = new player("O");
     const choices = document.querySelectorAll('.box');
     const board = document.querySelector('body');
     var roundNum = 0;
