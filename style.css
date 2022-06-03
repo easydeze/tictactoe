@@ -1,0 +1,48 @@
+body {
+    font-family: 'Bangers', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(249, 234, 213);
+}
+
+.container {
+    text-align: center;
+}
+
+.align {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);   
+    background-color: rgb(50, 87, 156);
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 234, 213);
+    font-weight: 600;
+    font-size: 4rem;
+    padding: 0px;
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: rgb(205, 202, 202);
+}
+
+.result {
+    text-align: center;
+    color:dodgerblue;
+    font-size: 3rem;
+}
